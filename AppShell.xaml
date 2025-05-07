@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Astronomy.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Astronomy.Pages"
+    FlyoutIcon="moon.png">
+
+    <FlyoutItem Title="Moon Phase" Icon="moon.png">
+        <ShellContent
+            Title="Moon Phase"
+            ContentTemplate="{DataTemplate local:MoonPhasePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Sunrise" Icon="sun.png">
+        <ShellContent
+            Title="Sunrise"
+            ContentTemplate="{DataTemplate local:SunrisePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Astronomical Bodies" Icon="sun.png">
+        <ShellContent
+            Title="Astronomical Bodies"
+            ContentTemplate="{DataTemplate local:AstronomicalBodiesPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Astronomical Body Details" Icon="moon.png">
+        <ShellContent
+            Title="Astronomical Body Details"
+            ContentTemplate="{DataTemplate local:AstronomicalBodyPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Icon="question.png">
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:AboutPage}" />
+    </FlyoutItem>
+
+</Shell>

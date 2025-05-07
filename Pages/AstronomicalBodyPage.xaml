@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Astronomy.Pages.AstronomicalBodyPage"
+    Title="Astronomical Body Details">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15" HorizontalOptions="Center">
+
+            <!-- Картинка планети -->
+            <Image
+                x:Name="BodyImage"
+                HeightRequest="150"
+                WidthRequest="150"
+                HorizontalOptions="Center" />
+
+            <!-- Назва тіла -->
+            <Label
+                x:Name="BodyTitleLabel"
+                FontSize="32"
+                HorizontalOptions="Center"
+                Text="Loading..." />
+
+            <!-- Інформація у рамці -->
+            <Frame BorderColor="DarkGray" CornerRadius="10" Padding="10" WidthRequest="300">
+                <StackLayout>
+
+                    <Label Text="Mass:" FontAttributes="Bold" />
+                    <Label x:Name="MassLabel" FontSize="18" TextColor="Gray" />
+
+                    <Label Text="Circumference:" FontAttributes="Bold" Margin="0,10,0,0" />
+                    <Label x:Name="CircumferenceLabel" FontSize="18" TextColor="Gray" />
+
+                    <Label Text="Age:" FontAttributes="Bold" Margin="0,10,0,0" />
+                    <Label x:Name="AgeLabel" FontSize="18" TextColor="Gray" />
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
